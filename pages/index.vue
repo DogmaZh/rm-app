@@ -37,11 +37,13 @@ export default {
   },
   methods: {
     async loadMore() {
-      this.loading = true
-      const { results, info } = await this.$http.$get(this.info.next)
-      this.charactersList = [...this.charactersList, ...results]
-      this.info = info
-      this.loading = false
+      if (this.info.next) {
+        this.loading = true
+        const { results, info } = await this.$http.$get(this.info.next)
+        this.charactersList = [...this.charactersList, ...results]
+        this.info = info
+        this.loading = false
+      }
     },
   },
 }

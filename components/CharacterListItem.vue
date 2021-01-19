@@ -33,7 +33,6 @@ export default {
 
     @media (min-width: $mq-laptop) {
       .character-list-item__content {
-        position: absolute;
         top: 25px;
         left: 15px;
         transition: 0.4s;

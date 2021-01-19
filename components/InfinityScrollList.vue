@@ -77,6 +77,7 @@ export default {
     grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 30px;
     grid-column-gap: 31px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $mq-desktop) {
